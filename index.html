@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <style>
+        .cm1 {}
+
+        .cm2 {}
+
+        .cm3 {}
+
+        .cm4 {}
+
+        .r {
+            background-color: rgb(255, 192, 76);
+            padding-top: 6px;
+
+        }
+
+        .r1 {
+            padding-top: 6px;
+        }
+
+        .p1 {
+            font-family: Arial;
+            font-size: medium;
+            font-weight: 100px;
+            padding-top: 6px;
+        }
+
+        .r2 {
+
+            padding-top: 25px;
+        }
+
+        .s1 {
+            padding-top: 23px;
+        }
+
+        .s1:hover {
+            color: orange;
+        }
+
+        .s2 {
+            padding-top: 15px;
+        }
+
+        .b2 {
+            width: 90px;
+            height: 30px;
+            padding-bottom: 30px;
+            color: black;
+            border-radius: 50px;
+        }
+
+        .r3 {
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .content {
+
+            margin-left: 200px;
+            margin-top: -100px;
+            position: absolute;
+            top: 130px;
+        }
+
+        .bt {
+
+            margin-left: 30px;
+            position: absolute;
+            top: 350px;
+
+        }
+
+        .bt:hover {
+            color: orange;
+        }
+
+        .bt1 {
+            padding: 8px;
+            background-color: white;
+            width: 45px;
+            border: none;
+        }
+
+        .bt2 {
+            padding: 8px;
+            margin-left: 20px;
+            background-color: white;
+            width: 45px;
+            border: none;
+        }
+
+        .bt1:hover {
+            background-color: orange;
+        }
+
+        .bt2:hover {
+            background-color: orange;
+        }
+
+        .r4 {}
+
+        .d1 {
+            margin-top: 45px;
+        }
+
+        .d2 {
+            font-size: 25px;
+            font-weight: 600px;
+            margin-left: -30px;
+            margin-top: 15px;
+            font-family: 'Trebuchet MS';
+        }
+
+        .m1 {
+            background-color: rgb(255, 195, 85);
+        }
+
+        .m6 {
+            background-color: rgb(255, 195, 85);
+        }
+
+        .p1 {}
+
+        .p2 {}
+
+        .p3 {}
+
+        .p4 {}
+
+        .f {
+            margin-left: 25px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+
+        .e1 {
+            margin-left: 10px;
+            font-family: sans-serif;
+
+        }
+
+        .r5 {
+            margin-top: 60px;
+        }
+
+        .a1 {
+            border: 2px solid black;
+        }
+
+        .j {
+            border: 2px solid orange;
+            margin-left: -310px;
+            padding: 10px;
+            width: 190px;
+            background-color: white;
+            margin-top: 15px;
+        }
+
+        .j:hover {
+            background-color: rgb(253, 190, 72);
+        }
+
+        .o1 {
+            margin-top: 90px;
+            margin-left: 140px;
+        }
+
+        .o2 {
+            font-size: 25px;
+            font-weight: 600px;
+            margin-left: 25px;
+            margin-top: 25px;
+            font-family: 'Trebuchet MS';
+        }
+
+        .t1 {
+
+            margin-left: 20px;
+        }
+
+        .t2 {
+            border: 2px solid black;
+        }
+
+        .t3 {
+            border: 2px solid black;
+        }
+
+        .r7 {
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        .u1 {
+
+            margin-left: 20px;
+        }
+
+        .r8 {
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        .z {
+            font-size: 40px;
+            margin-left: 150px;
+        }
+
+        .z1 {
+            font-size: 20px;
+            font-family: serif;
+            margin-left: 150px;
+        }
+
+        .r9 {
+            margin-top: 40px;
+        }
+
+        .r10 {
+            margin-left: 40px;
+        }
+
+        .v {
+            margin-left: 20px;
+            font-weight: 600px;
+
+        }
+
+        .w {
+            margin-left: 75px;
+        }
+
+        .c {
+            font-size: 12px;
+            margin-left: 15px;
+        }
+
+        .q {
+            margin-left: 40px;
+        }
+
+        .r11 {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        .x {
+
+            margin-left: 180px;
+            width: 50%;
+            margin-top: -100px;
+        }
+
+        .d {
+            font-size: 12px;
+            margin-top: -20px;
+            margin-left: 15px;
+        }
+
+        .n {
+            margin-top: 70px;
+            margin-left: 160px;
+        }
+
+        .r13 {
+            margin-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row r">
+        <div class="col-2 cm1">
+
+        </div>
+        <div class="col-2 cm2">
+            <div class="row r1">
+                <div class="col-2"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="col-2"><i class="fa-brands fa-twitter"></i></div>
+                <div class="col-2"><i class="fa-brands fa-square-instagram"></i></div>
+                <div class="col-2"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+        </div>
+        <div class="col-4 cm3">
+        </div>
+        <div class="col-3.5 cm4">
+            <p class="p1">long established fact that a reader will be</p>
+        </div>
+    </div>
+    <div class="row r2">
+        <div class="col-1"></div>
+        <div class="col-3"><img src="logo.jpeg" alt=""></div>
+        <div class="col-1 s1">HOME</div>
+        <div class="col-1 s1">ABOUT</div>
+        <div class="col-1 s1">PRODUCT</div>
+        <div class="col-1 s1">BLOG</div>
+        <div class="col-1 s1">CONTACT</div>
+        <div class="col-1 s1">SIGNUP</div>
+        <div class="col-1 s2"><button type="button" class="btn btn-warning b2">LOGIN</button></div>
+        <div class="col-1"></div>
+
+    </div>
+    <div class="row r3">
+        <div class="col-12">
+            <img src="banner.jpeg" alt="" width="100%" height="400px">
+
+        </div>
+        <div class="content">
+            <p style="font-size: 50px;">OUR</p>
+            <p style="font-size: 50px;font-weight:bold;line-height:1px;">LATEST</p>
+            <p style="font-size: 50px;font-weight:bold;color:rgb(250, 189, 75)">PRODUCT</p>
+            <p style="font-family:fantasy;">It is a long established fact that a r<br>
+                eader will be distracted by the readable content of a page</p>
+            <button
+                style="border-radius: 20px 0px 19px 20px;background-color:rgb(244, 183, 71);color:white;width:200px;height:40px;border:none;">see
+                more products</button>
+        </div>
+        <div class="bt">
+            <button class="bt1">
+                << /button>
+                    <button class="bt2">></button>
+        </div>
+
+    </div>
+    <div class="row r4">
+        <div class="col-4"></div>
+        <div class="col-5">
+            <h1 class="d1"><span style="color: orange;">WHY</span> C<u>HOO</u>SE US</h1>
+            <p class="d2">Fastest repair service with best price!</p>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row r5">
+        <div class="col-2 m1"></div>
+
+        <div class="col-2 m2">
+            <div class="p1">
+                <img src="data_recovery.jpeg" alt="">
+                <p class="f">Data recovery
+                <p>
+                <p class="e1">Perspiciatis eos quos totam
+                    cum minima autPerspiciatis
+                    eos quos</p>
+            </div>
+        </div>
+        <div class="col-2 m3">
+            <div class="p2">
+                <img src="computer_repair.jpeg" alt="">
+                <p class="f">Computer repair</p>
+                <p class="e1">Perspiciatis eos quos totam
+                    cum minima autPerspiciatis
+                    eos quos</p>
+            </div>
+        </div>
+        <div class="col-2 m4">
+            <div class="p3">
+                <img src="mobile_service.jpeg" alt="">
+                <p class="f">Mobile service</p>
+                <p class="e1">Perspiciatis eos quos totam
+                    cum minima autPerspiciatis
+                    eos quos</p>
+            </div>
+        </div>
+        <div class="col-2 m5">
+            <div class="p4">
+                <img src="network_solution.jpeg" alt="">
+                <p class="f">Network solutions</p>
+                <p class="e1">Perspiciatis eos quos totam
+                    cum minima autPerspiciatis
+                    eos quos</p>
+            </div>
+            <button class="j">Read More</button>
+        </div>
+
+        <div class="col-2 m6"></div>
+    </div>
+    <div class="row r6">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 class="o1"><span style="color: orange;">SERVI<u>CE</span> PR</u>OCESS</h1>
+            <p class="o2">Easy and effective way to get your device repair</p>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row r7">
+        <div class="col-3 t1">
+            <img src="fast_service.jpeg" alt="" style="margin-left: 30px;margin-top:10px;">
+            <p style="margin-left: 50px;margin-top:13px;"><b>Fast service</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+        <div class="col-3 t1">
+            <img src="secure_payments.jpeg" alt="" style="margin-left: 50px;">
+            <p style="margin-left: 40px;margin-top:15px;"><b>Secure payments</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+        <div class="col-3 t1">
+            <img src="expert_team.jpeg" alt="" style="margin-left: 50px;">
+            <p style="margin-left: 50px;margin-top:10px;"><b>Expert team</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+
+    </div>
+    <div class="row r8">
+        <div class="col-3 u1 ">
+            <img src="affordable_services.jpeg" alt="" style="margin-left: 55px;margin-top:10px;">
+            <p style="margin-left: 25px;margin-top:13px;"><b>Affordable services</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+        <div class="col-3 u1">
+            <img src="90 days_warranty.jpeg" alt="" style="margin-left: 55px; margin-top:10px;">
+            <p style="margin-left: 40px;margin-top:15px;"><b>90 Days warranty</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+        <div class="col-3 u1">
+            <img src="award_winning.jpeg" alt="" style="margin-left: 60px;">
+            <p style="margin-left: 40px;margin-top:10px;"><b>Award winning</b></p>
+            <p style="font-family: sans-serif;margin-left:10px;">Exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea</p>
+        </div>
+    </div>
+    <div class="row r9">
+        <div class="col-1"></div>
+        <div class="col-8">
+            <p class="z"><span style="color:orange;"><u>OUR</u></span> PRODUCTS</p>
+            <p class="z1">We package the products with best services to make you a happy customer.</p>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row r10">
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS1.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center">
+                    <img src="NIS2.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS3.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row r11">
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS4.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS5.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p></b>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS6.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="NIS7.jpeg" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color:rgb(231, 227, 227)">
+                        <p class="card-text c">Norton Internet Security</p>
+                        <span class="q">$25.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <div class="container">
+        <div class="col-12">
+            <h3 style="margin-left: 35px;font-size:40px;">What Clients Say?</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img-bg">
+            <i>
+                <img src="jone_due.jpeg" alt="" style="margin-left: 50px;margin-top:20px;height:110px">
+                <div class="x">
+                    <p style="font-size: 25px;">Jone Due</p>
+                    <b>
+                        <p class="d">12/02/2019 </p>
+                    </b>
+                </div>
+
+
+            </i>
+        </div>
+    </div>
+    <div class="container n">
+        <p style="font-family:sans-serif">You guys rock! Thank you for making it painless, pleasant and most of all
+            hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.
+        </p>
+        <p style="font-family:sans-serif">You guys rock! Thank you for making it painless, pleasant and most of all
+            hassle free! I wish I would have thought of it first. I am</p>
+
+    </div>
+    <div class="row r13">
+        <div class="col-2"></div>
+        <div class="col-9" style="background-color: rgb(255, 189, 66);">
+            <p style="font-size: 25px;color:white;margin-top:40px;"><b>REQUEST A FREE QUOTE</b></p>
+            <img src="call.jpeg" alt="" style="margin-left: 300px;margin-top:-90px;">
+            <p style="font-size: 20px;margin-top:-30px;">Get answers and advice from people you want it from.</p>
+            <button type="button" class="btn btn-primary btn-lg"
+                style="background-color: black;border-radius: 90px;width:250px;margin-left:500px;margin-top:-150px;border:none;">Get
+                Quote</button>
+        </div>
+        <div class="col-1"></div>
+
+    </div>
+    <img src="map.jpeg" alt="" style="background-size: cover;background-repeat: no-repeat;width:1200px;height:500px;">
+    <div class="container-fluid" style="background-color: black;">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col-12" style="margin-left: 480px;margin-top:40px;">
+                <i class="fa-brands fa-facebook-f"
+                    style="color:white;font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-brands fa-twitter"
+                    style="color:white;font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-brands fa-square-instagram"
+                    style="color:white;font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-brands fa-square-instagram"
+                    style="color:white;font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 40px;margin-left:20px;">
+            <div class="col-2"></div>
+            <div class="col-2 ">
+                <h2 class="text-center" style="font-size: 20px;color:white;">CONATCT US</h2>
+                <p class="text-center" style="color: white;margin-top:10px;">123 Second Street Fifth Avenue,
+                    Manhattan, New York
+                    +987 654 3210</p>
+            </div>
+            <div class="col-2 ">
+                <h2 class="text-center" style="font-size: 18px;color:white;">ADDITIONAL LINKS</h2>
+                <p class="text-center" style="color: white;margin-top:10px;">About us
+                    Terms and conditions
+                    Privacy policy
+                    News
+                    Contact us </p>
+            </div>
+            <div class="col-2 ">
+                <h2 class="text-center" style="font-size: 20px;color:white;">SERVICE</h2>
+                <p class="text-center" style="color: white;margin-top:10px;">Data recovery
+
+                    Computer repair
+                    Mobile service
+                    Network solutions
+                    Technical support</p>
+            </div>
+            <div class="col-2 ">
+                <h3 class="text-center" style="font-size: 20px;color:white;">ABOUT LIGHTEN</h3>
+                <p class="text-center" style="color: white;margin-top:10px;">Tincidunt elit magnis nulla facilisis.
+                    Dolor Sapien nunc amet ultrices,</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="contaniner-fluid" style="background-color: rgb(255, 188, 64);">
+        <div class="row ">
+            <div class="col-12">
+                <p style="margin-left: 310px;margin-top:10px;">Copyright 2019 All Right Reserved By Free html Templates
+                    Distributed By ThemeWagon</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
